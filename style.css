@@ -1,0 +1,109 @@
+@charset "UTF-8";
+:root{
+  --background: #5f2285;
+}
+*{
+  box-sizing: border-box;
+
+}
+body{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-family: Sans-Serif;
+  background-color: var(--background);
+  height: 100vh;
+}
+.container{
+  background-color: white;
+  width: 344px;
+}
+p {
+  font-size: 31px;
+  text-align: center;
+}
+form{
+  width: 90%;
+}
+form input{
+  width: 100%;
+  margin: 10px;
+  outline: none;
+  font-size: 15px;
+  padding: 5px;
+}
+label{
+  margin: 14px;
+  font-weight: 900;
+}
+.rotate.chapcha{
+  margin: 2px 12px;
+  display: inline-block;
+  border: 2px solid #f19001;
+  padding: 15px;
+  font-size: 2rem;
+  background: linear-gradient(#d7b4ec,#9d92a4,#dddddd,#fff);
+}
+.ref{
+  margin: 12px;
+}
+#btn{
+  width: 90%;
+  background-color: var(--background);
+  margin: 12px 15px;
+  padding: 10px 15px;
+  border: 0;
+  border-radius: 5px;
+  font-weight: 900;
+  color: #ffffff;
+  font-size: 20px;
+  height: auto;
+}
+#btn:focus{
+  outline: none;
+}
+.err{
+  margin: 0;
+  padding: 2px;
+  color: red;
+  font-size: 14px;
+}
+.success{
+  background: #fff;
+  width: 400px;
+  height: 200px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  animation: login 3s 1;
+}
+.success h2{
+  font-size: 3rem;
+}
+@keyframes login{
+  0%{
+    position: absolute;
+    top: 0;
+  }
+}
+@media screen and (max-width: 400px){
+  .success h2{
+    font-size: 2.6rem;
+  }
+}
+@media screen and (max-width: 350px){
+  .success h2{
+    font-size: 2.3rem;
+  }
+  
+}
+@media screen and (max-width: 290px){
+  .success {
+    width: 200px;
+    height: 80px;
+  }
+  .success h2{
+    font-size: 1.6rem;
+  }
+}
